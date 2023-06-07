@@ -1,0 +1,28 @@
+<h2>Por País</h2>
+<hr>
+<div class="row">
+  <div class="col">
+
+    <app-search-box
+    [placeholder]="placeholder"
+    (valorEnviado)="buscarPais($event)"
+    ></app-search-box>
+
+    <hr>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+
+    <app-table-resultados
+
+
+
+    [paises]="paises"
+
+    ></app-table-resultados>
+
+
+  </div>
+</div>

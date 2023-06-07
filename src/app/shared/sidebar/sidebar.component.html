@@ -1,0 +1,22 @@
+<h2>Paises</h2>
+<hr>
+<ul class="list-group">
+  <li *ngFor="let item of sideBarMenu"
+  class="list-group-item"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"
+  [routerLink]="item.path"
+  >{{item.titulo}}</li>
+<!--    <li
+   class="list-group-item "
+
+   routerLink="/api/capital"
+   >Por Capital</li>
+
+
+   <li
+   routerLink="/api/pais"
+   class="list-group-item "
+
+   >Por Pais</li> -->
+</ul>
