@@ -5,6 +5,7 @@
 
     <app-search-box
     [placeholder]="placeholder"
+    [valorInicial]="valorInicial"
     (valorEnviado)="buscarPais($event)"
     ></app-search-box>
 
@@ -18,8 +19,8 @@
     <app-table-resultados
 
 
-
     [paises]="paises"
+
 
     ></app-table-resultados>
 

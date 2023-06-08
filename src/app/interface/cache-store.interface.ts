@@ -1,19 +1,6 @@
-import { Country } from './country';
-import { Region } from './region.type';
+import { Paises } from "./restcountries-response.interface";
 
-
-export interface CacheStore {
-  byCapital:   TermCountries;
-  byCountries: TermCountries;
-  byRegion:    RegionCountries;
-}
-
-export interface TermCountries {
-  term: string;
-  countries: Country[];
-}
-
-export interface RegionCountries {
-  region:    Region;
-  countries: Country[];
+export interface CacheStore{
+  porPais : {termino : string, paises : Paises[]},
+  porCapital : {termino : string, capitales : Paises[]}
 }
